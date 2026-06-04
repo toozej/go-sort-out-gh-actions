@@ -20,7 +20,7 @@ jobs:
     if: github.actor == 'dependabot[bot]'
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v6.0.2
         with:
           ref: ${{ github.event.pull_request.head.ref }}
           token: ${{ secrets.GH_TOKEN }}
